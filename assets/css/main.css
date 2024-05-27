@@ -1,0 +1,253 @@
+@import './base.css';
+
+/* start header*/
+.active {
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1.65px 8.24px 0px #0000001A;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header .logo a {
+    color: var(--maincolor);
+}
+
+.header .logo img {
+    width: 40px;
+}
+
+.header .nav a {
+    color: #101928;
+}
+
+.header .auth a {
+    font-family: var(--subFont);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.header .auth a:first-of-type {
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor);
+}
+
+.header .auth a:last-of-type {
+    background-color: var(--maincolor);
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .header .nav {
+        display: none;
+    }
+}
+
+/*end header*/
+
+/*start Testimonials */
+.testimonials {
+    text-align: center;
+    
+}
+
+
+.testimonials h2 {
+    margin-bottom: 40px;
+}
+
+.testimonials  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.testimonial  .rayancontain img {
+    width: 50px;
+    height: 50px;
+  border-radius:50% ;
+
+}
+.testimonial .rayancontain{
+    display: flex;
+   /* padding: 10px; */
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+.testimonial .rayancontain .rayan{
+    padding: 10px;
+
+}
+.testimonial .rayancontain .userinfo span{
+font-size: 12px;
+color: dimgrey;
+}
+.testimonial .rayancontain .userinfo {
+   align-items: flex-start;
+    }
+    
+.testimonial .userinfo .rating img {
+    width: 40px;
+    height: 40px;
+
+}
+.testimonial .userinfo .rating  {
+    align-content:flex-start;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 47%; /* Set a fixed width for each testimonial */
+    box-sizing: border-box;
+    padding: 0 20px;
+    border: 1px solid #eee;
+}
+
+.rating,
+blockquote {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+flex-wrap: wrap;
+gap: 10px;
+align-items: self-start;
+box-shadow: 14px 10px 10px 0px #0000001A;
+margin-bottom: 30px;
+padding: 20px;
+position: relative;
+
+}
+.testimonial::after{
+    content: "";
+    border-top: 40px solid #F4F4F4;
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    position: absolute;
+top: 0;
+right: 0;
+}
+.testimonial blockquote q {
+    color: #646464;
+    text-align: left;
+  
+}
+
+.testimonial .rating{
+    display: flex;
+    flex-wrap: wrap;
+    gap:7px;
+
+}
+
+/*start footer*/
+.footer {
+    background-color: #393E46;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer .row {
+    gap: 20px;
+}
+
+.hello {
+    gap: 16px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .start-footer,
+.footer .end-footer {
+    width: calc((100% - 40px) / 2);
+}
+
+.start-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer .start-footer .iconsimg {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer .start-footer .iconsimg img {
+    width: 35px;
+}
+
+.footer .start-footer .iconsimg a {
+    font-size: 14px;
+}
+
+.footer .start-footer p {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.footer .start-footer .icons img {
+    border: 1px solid #fff;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+.footer .start-footer .icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer .end-footer .row {
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.end-footer .input-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.end-footer .input-form ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
